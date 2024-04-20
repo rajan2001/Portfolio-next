@@ -1,4 +1,5 @@
 "use client";
+import BlogGrid from "@/components/BlogGrid";
 import BlogTable from "@/components/BlogTable";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -60,6 +61,7 @@ function BlogPage() {
       </div>
 
       <BlogTable />
+      <BlogGrid/>
     </>
   );
 }
