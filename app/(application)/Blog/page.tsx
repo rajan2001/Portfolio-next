@@ -61,7 +61,7 @@ function BlogPage() {
       </div>
 
       <BlogTable />
-      <BlogGrid/>
+      <BlogGrid />
     </>
   );
 }

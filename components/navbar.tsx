@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 function NavBar({ Navlink }: { Navlink: string[] }) {
   const pathname = usePathname().split("/");
   return (
-    <nav className="flex justify-between lg:justify-around px-12 lg:px-0  py-12 flex-1 items-center font-semibold">
+    <nav className="flex justify-between px-0  py-12  items-center font-semibold">
       <Link
         href={"/"}
         className={`text-[2rem] after:content-[''] after:mt-2 after:block 
