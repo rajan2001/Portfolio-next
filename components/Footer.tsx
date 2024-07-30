@@ -4,7 +4,7 @@ import React from "react";
 
 function Footer() {
     return (
-        <div className="flex flex-col lg:flex-row gap-y-6  py-12 border-t mt-12">
+        <div className="flex flex-col lg:flex-row gap-y-6  py-12 border-t mt-[8rem]">
             <div className="flex-1 flex flex-col  gap-y-4 dark:text-white/60 text-black/60 text-[1.125rem] font-extralight ">
                 <h3 className=" text-2xl leading-8 font-normal text-black dark:text-white">
                     Let&apos;s connect and grab a coffee ☕

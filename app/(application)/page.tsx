@@ -1,6 +1,7 @@
 "use client"
 import HomeAbout from "@/components/HomeAbout";
 import HomeHero from "@/components/HomeHero";
+import HomeProject from "@/components/HomeProject";
 
 function Page() {
   const handleClick = () => {
@@ -15,7 +16,7 @@ function Page() {
       <div id="target-section">
         <HomeAbout />
       </div>
-      <HomeHero handleClick={handleClick} />
+      <HomeProject />
     </div>
 
   );

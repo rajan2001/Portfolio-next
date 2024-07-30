@@ -6,8 +6,8 @@ import Image from "next/image";
 const HomeAbout = () => {
     return (
         <div className="grid relative grid-cols-4 lg:grid-cols-12 md:grid-cols-8 lg:gap-x-6 gap-x-4 mx-auto max-w-7xl h-auto ">
-            <div className="lg:col-start-1 lg:col-span-5  col-span-full flex justify-center items-center mb-20 lg:mb-0">
-                <div className=" w-full mx-auto group relative overflow-hidden rounded-3xl bg-neutral-100">
+            <div className="lg:col-start-1 lg:col-span-5  col-span-full  justify-center items-center mb-20 lg:mb-0 relative hidden lg:flex">
+                <div className=" w-full mx-auto group relative overflow-hidden rounded-3xl bg-neutral-100 ">
                     <Image
                         className=" w-full object-contain grayscale transition duration-500 motion-safe:group-hover:scale-105"
                         width={512}
@@ -16,6 +16,7 @@ const HomeAbout = () => {
                         alt="Profile" />
 
                 </div>
+                <div className=" bg-green-100 text-green-600 py-5 px-6 rounded-xl -bottom-6 -right-6 absolute">Let me show you what I&apos;m working on...🧑‍💻</div>
             </div>
             <div className="lg:col-start-7 col-span-full lg:col-span-7 flex flex-col h-full">
                 <div className="flex flex-col gap-y-14 ">
