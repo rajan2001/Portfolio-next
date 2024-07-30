@@ -26,7 +26,7 @@ function Footer() {
                 </p>
             </div>
             <div className=" flex flex-col dark:text-white/60 text-black/60">
-                <div className=" flex-col text-right gap-3 flex-1 sm:hidden lg:flex">
+                <div className=" flex-col text-right gap-3 flex-1 hidden lg:flex">
                     <Link href="/About" className="footer_links">
                         About
                     </Link>
