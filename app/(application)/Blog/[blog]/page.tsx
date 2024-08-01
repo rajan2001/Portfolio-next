@@ -20,15 +20,18 @@ const Page = () => {
             <h3 className="text-xl font-medium text-slate-500">{blogbyId?.createdAt}</h3>
 
         </div>
-        <div>
-            {blogbyId?.paragraph.map((para) => <div key={para.id}>
-                <h3 className="text-2xl font-medium">{`${para.id}. ${para.heading}`}</h3>
-                <ul className="list-disc ml-6 mt-6 text-slate-400">
-                    {para.points.map((p) => <li key={p} className="mt-2 " >{p}</li>)}
-                </ul>
-            </div>)}
-        </div>
-        <HigligtCode />
+
+        {blogbyId?.paragraph.map((para) => <div key={para.id}>
+            {para.heading ? <h3 className="text-2xl font-medium">{`${para.heading}`}</h3> : null}
+            {para.points ? <ul className="list-disc ml-6 mt-6 text-slate-400">
+                {para.points.map((p) => <li key={p} className="mt-2 " >{p}</li>)}
+            </ul> : null}
+            {para.codes ? <div className="mt-10">
+                <HigligtCode codeString={para.codes} />
+            </div> : null}
+
+        </div>)}
+
     </div>
 }
 
