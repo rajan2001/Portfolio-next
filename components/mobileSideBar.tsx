@@ -36,10 +36,18 @@ function MobileSideBar({ Navlink }: { Navlink: string[] }) {
             <Link
               key={link}
               className="after:content-[''] after:block after:w-0 after:h-[2px] after:bg-black after:mt-2 hover:after:w-full after:transition-all after:duration-300 dark:after:bg-white dark:hover:text-white hover:text-black"
-              href={link}>
+              href={`/${link}`}>
               {link}
             </Link>
           ))}
+          <a
+            href="https://drive.google.com/file/d/1CSnwEwfb8w1_A-trW1OycZ7pkn-Z8UlA/view"
+            className="after:content-[''] after:block after:w-0 after:h-[2px] after:bg-black after:mt-2 hover:after:w-full after:transition-all after:duration-300 dark:after:bg-white dark:hover:text-white hover:text-black"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
           <div>
             <ModeToggle />
           </div>

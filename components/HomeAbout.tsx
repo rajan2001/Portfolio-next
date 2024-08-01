@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -5,7 +6,7 @@ import Image from "next/image";
 
 const HomeAbout = () => {
     return (
-        <div className="grid relative grid-cols-4 lg:grid-cols-12 md:grid-cols-8 lg:gap-x-6 gap-x-4 mx-auto max-w-7xl h-auto ">
+        <div className="grid relative grid-cols-4 lg:grid-cols-12 md:grid-cols-8 lg:gap-x-6 gap-x-4 mx-auto max-w-7xl h-auto " id="target-section">
             <div className="lg:col-start-1 lg:col-span-5  col-span-full  justify-center items-center mb-20 lg:mb-0 relative hidden lg:flex">
                 <div className=" w-full mx-auto group relative overflow-hidden rounded-3xl bg-neutral-100 ">
                     <Image

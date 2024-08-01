@@ -8,7 +8,14 @@ const DynamicAnimation = dynamic(() => import("./animation"), {
   ssr: false,
 });
 
-const HomeHero = ({ handleClick }: any) => {
+const HomeHero = () => {
+
+  const handleClick = () => {
+    const section = document.getElementById("target-section");
+    if (section) {
+      window.scrollTo({ behavior: "smooth", top: section.offsetTop - 100, });
+    }
+  };
 
   return (
     <div className="grid relative grid-cols-4 lg:grid-cols-12 md:grid-cols-8 lg:gap-x-6 gap-x-4 mx-auto max-w-7xl h-auto lg:pt-24 lg:min-h-[40rem]">
