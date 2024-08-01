@@ -9,7 +9,7 @@ const HigligtCode = ({ codeString }: any) => {
     return (
         <SyntaxHighlighter language="javascript" wrapLines={true}
             style={docco}
-            customStyle={{ backgroundColor: "#64748b1a", color: `${theme === "dark" ? "white" : "black"}`, width: "70%", padding: "1.5rem", paddingLeft: "2.5rem", borderRadius: "1rem" }}
+            customStyle={{ backgroundColor: "#64748b1a", color: `${theme === "dark" ? "white" : "black"}`, padding: "1.5rem", paddingLeft: "2.5rem", borderRadius: "1rem" }}
         >
             {codeString}
         </SyntaxHighlighter>
